@@ -20,15 +20,19 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="dyc学习日记">
-<meta property="og:url" content="http://example.com/tags/Markdown/index.html">
+  <meta name="description" content="区别：进程是单独占用地址空间，线程共用地址空间多线程 多进程管道，文件，消息队列，内存共享实现进程通信不同电脑通过socket实现 线程   join（）一个线程只能join一次   detach()驻留后台子线程   joinable(）如何判断detach()是否执行if(xx.joinable)  … 创建线程的三种方式 普通函数 对象 拉姆达表达式 带参方式创建线程 带智能指针 类的成员函">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2022.10.5 学习">
+<meta property="og:url" content="http://example.com/2022/10/05/2022-10-5-%E5%AD%A6%E4%B9%A0/index.html">
 <meta property="og:site_name" content="dyc学习日记">
+<meta property="og:description" content="区别：进程是单独占用地址空间，线程共用地址空间多线程 多进程管道，文件，消息队列，内存共享实现进程通信不同电脑通过socket实现 线程   join（）一个线程只能join一次   detach()驻留后台子线程   joinable(）如何判断detach()是否执行if(xx.joinable)  … 创建线程的三种方式 普通函数 对象 拉姆达表达式 带参方式创建线程 带智能指针 类的成员函">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-10-05T09:22:51.000Z">
+<meta property="article:modified_time" content="2022-10-06T09:00:14.163Z">
 <meta property="article:author" content="杜迎聪同学">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/tags/Markdown/">
+<link rel="canonical" href="http://example.com/2022/10/05/2022-10-5-%E5%AD%A6%E4%B9%A0/">
 
 
 <script id="page-configurations">
@@ -36,12 +40,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>标签: Markdown | dyc学习日记</title>
+  <title>2022.10.5 学习 | dyc学习日记</title>
   
 
 
@@ -169,51 +173,108 @@
         <div class="content-wrap">
           
 
-          <div class="content tag">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h2 class="collection-header">Markdown
-          <small>标签</small>
-        </h2>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/05/2022-10-5-%E5%AD%A6%E4%B9%A0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="杜迎聪同学">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="dyc学习日记">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          2022.10.5 学习
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-10-05 17:22:51" itemprop="dateCreated datePublished" datetime="2022-10-05T17:22:51+08:00">2022-10-05</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-10-06 17:00:14" itemprop="dateModified" datetime="2022-10-06T17:00:14+08:00">2022-10-06</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2022</span>
+        <h3 id="区别：进程是单独占用地址空间，线程共用地址空间"><a href="#区别：进程是单独占用地址空间，线程共用地址空间" class="headerlink" title="区别：进程是单独占用地址空间，线程共用地址空间"></a>区别：进程是单独占用地址空间，线程共用地址空间</h3><h1 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h1><ul>
+<li>多进程<br>管道，文件，消息队列，内存共享实现进程通信<br>不同电脑通过socket实现</li>
+<li>线程  </li>
+<li>join（）<br>一个线程只能join一次  </li>
+<li>detach()<br>驻留后台子线程</li>
+</ul>
+<ul>
+<li>joinable(）<br>如何判断detach()是否执行<br>if(xx.joinable)  …</li>
+<li>创建线程的三种方式<ol>
+<li>普通函数</li>
+<li>对象</li>
+<li>拉姆达表达式</li>
+<li>带参方式创建线程</li>
+<li>带智能指针</li>
+<li>类的成员函数</li>
+</ol>
+</li>
+<li>问题：<br>竞态条件,数据竞争，多数据竞争同一块内存数据.  </li>
+<li>解决办法：mutex互斥锁<br>mutex 存在问题，如果锁和解锁之间出现问题的话，就会出现死锁。  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">解决办法：lock_guard  </span><br><span class="line">std::lock_guard&lt;mutex&gt; guard(mu);//初始化一个lock_gurad对象就可以了</span><br></pre></td></tr></table></figure></li>
+<li>死锁(deadlock)<br>例如两个进程调用两个不同函数，两个函数加两把锁的话就挺有问题的，会互斥。<br>解决办法：</li>
+</ul>
+<ol>
+<li>锁改成同一个顺序  </li>
+<li>&#96;&#96;&#96;<br>std::lock和adopt_lock函数<br>std::lock(_mu, _mu2);<br>std::lock_guard<mutex> locker(_mu, std::adopt_lock);<br>std::lock_guard<mutex> locker2(_mu2, std::adopt_lock);</li>
+</ol>
+<p>&#96;&#96;&#96;<br>3. 每次使用lock_guard的时候加个大括号，跳出作用域。  </p>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
+    
+    
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-10-03T19:20:24+08:00"
-              content="2022-10-03">
-          10-03
-        </time>
-      </div>
+      <footer class="post-footer">
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/10/03/2022-10-3%E6%80%9D%E8%80%83/" itemprop="url">
-            <span itemprop="name">2022.10.3工作思考</span>
-          </a>
-      </div>
+        
 
-    </header>
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/10/04/2020-10-4-%E5%8D%95%E8%B0%83%E6%A0%88%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" rel="prev" title="2020.10.4_单调栈学习记录">
+      <i class="fa fa-chevron-left"></i> 2020.10.4_单调栈学习记录
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
   </article>
-
-    </div>
-  </div>
   
   
-  
-
   
 
 
@@ -266,6 +327,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8C%BA%E5%88%AB%EF%BC%9A%E8%BF%9B%E7%A8%8B%E6%98%AF%E5%8D%95%E7%8B%AC%E5%8D%A0%E7%94%A8%E5%9C%B0%E5%9D%80%E7%A9%BA%E9%97%B4%EF%BC%8C%E7%BA%BF%E7%A8%8B%E5%85%B1%E7%94%A8%E5%9C%B0%E5%9D%80%E7%A9%BA%E9%97%B4"><span class="nav-number">1.</span> <span class="nav-text">区别：进程是单独占用地址空间，线程共用地址空间</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%A4%9A%E7%BA%BF%E7%A8%8B"><span class="nav-number"></span> <span class="nav-text">多线程</span></a></div>
       </div>
       <!--/noindex-->
 

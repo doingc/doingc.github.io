@@ -175,6 +175,158 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/05/2022-10-5-%E5%AD%A6%E4%B9%A0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="杜迎聪同学">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="dyc学习日记">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/10/05/2022-10-5-%E5%AD%A6%E4%B9%A0/" class="post-title-link" itemprop="url">2022.10.5 学习</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-10-05 17:22:51" itemprop="dateCreated datePublished" datetime="2022-10-05T17:22:51+08:00">2022-10-05</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-10-06 17:00:14" itemprop="dateModified" datetime="2022-10-06T17:00:14+08:00">2022-10-06</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="区别：进程是单独占用地址空间，线程共用地址空间"><a href="#区别：进程是单独占用地址空间，线程共用地址空间" class="headerlink" title="区别：进程是单独占用地址空间，线程共用地址空间"></a>区别：进程是单独占用地址空间，线程共用地址空间</h3><h1 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h1><ul>
+<li>多进程<br>管道，文件，消息队列，内存共享实现进程通信<br>不同电脑通过socket实现</li>
+<li>线程  </li>
+<li>join（）<br>一个线程只能join一次  </li>
+<li>detach()<br>驻留后台子线程</li>
+</ul>
+<ul>
+<li>joinable(）<br>如何判断detach()是否执行<br>if(xx.joinable)  …</li>
+<li>创建线程的三种方式<ol>
+<li>普通函数</li>
+<li>对象</li>
+<li>拉姆达表达式</li>
+<li>带参方式创建线程</li>
+<li>带智能指针</li>
+<li>类的成员函数</li>
+</ol>
+</li>
+<li>问题：<br>竞态条件,数据竞争，多数据竞争同一块内存数据.  </li>
+<li>解决办法：mutex互斥锁<br>mutex 存在问题，如果锁和解锁之间出现问题的话，就会出现死锁。  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">解决办法：lock_guard  </span><br><span class="line">std::lock_guard&lt;mutex&gt; guard(mu);//初始化一个lock_gurad对象就可以了</span><br></pre></td></tr></table></figure></li>
+<li>死锁(deadlock)<br>例如两个进程调用两个不同函数，两个函数加两把锁的话就挺有问题的，会互斥。<br>解决办法：</li>
+</ul>
+<ol>
+<li>锁改成同一个顺序  </li>
+<li>&#96;&#96;&#96;<br>std::lock和adopt_lock函数<br>std::lock(_mu, _mu2);<br>std::lock_guard<mutex> locker(_mu, std::adopt_lock);<br>std::lock_guard<mutex> locker2(_mu2, std::adopt_lock);</li>
+</ol>
+<p>&#96;&#96;&#96;<br>3. 每次使用lock_guard的时候加个大括号，跳出作用域。  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/04/2020-10-4-%E5%8D%95%E8%B0%83%E6%A0%88%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="杜迎聪同学">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="dyc学习日记">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/10/04/2020-10-4-%E5%8D%95%E8%B0%83%E6%A0%88%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" class="post-title-link" itemprop="url">2020.10.4_单调栈学习记录</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-10-04 08:52:29 / 修改时间：10:27:39" itemprop="dateCreated datePublished" datetime="2022-10-04T08:52:29+08:00">2022-10-04</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="单调栈"><a href="#单调栈" class="headerlink" title="单调栈"></a>单调栈</h1><ul>
+<li>利用栈和空间来去节省时间，从而把时间复杂度从O(n*n)节省到O(n)。</li>
+<li>执行过程，遍历原本数组长度。</li>
+</ul>
+<h1 id="TCP-服务端的内容编写"><a href="#TCP-服务端的内容编写" class="headerlink" title="TCP 服务端的内容编写"></a>TCP 服务端的内容编写</h1>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/03/2022-10-3%E6%80%9D%E8%80%83/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -368,12 +520,12 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span>
       </div>
   </nav>
