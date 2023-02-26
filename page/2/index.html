@@ -175,7 +175,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/09/25/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/08/2022-10-8-%E7%A9%BA%E9%97%B2%E6%80%9D%E8%80%83/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -189,7 +189,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/09/25/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+            <a href="/2022/10/08/2022-10-8-%E7%A9%BA%E9%97%B2%E6%80%9D%E8%80%83/" class="post-title-link" itemprop="url">2022.10.8 空闲思考</a>
         </h2>
 
         <div class="post-meta">
@@ -199,7 +199,304 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2022-09-25 20:09:58" itemprop="dateCreated datePublished" datetime="2022-09-25T20:09:58+08:00">2022-09-25</time>
+              <time title="创建时间：2022-10-08 22:17:47" itemprop="dateCreated datePublished" datetime="2022-10-08T22:17:47+08:00">2022-10-08</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-10-10 14:53:57" itemprop="dateModified" datetime="2022-10-10T14:53:57+08:00">2022-10-10</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li>自学宝典<br>立志向的意义是将志向不断和自己的行为和想法联系起来。</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/07/%E6%91%A9%E5%B0%94%E6%8A%95%E7%A5%A8%E6%B3%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="杜迎聪同学">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="dyc学习日记">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/10/07/%E6%91%A9%E5%B0%94%E6%8A%95%E7%A5%A8%E6%B3%95/" class="post-title-link" itemprop="url">20221007摩尔投票法</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-10-07 09:05:46" itemprop="dateCreated datePublished" datetime="2022-10-07T09:05:46+08:00">2022-10-07</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-10-08 22:11:44" itemprop="dateModified" datetime="2022-10-08T22:11:44+08:00">2022-10-08</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="摩尔投票法"><a href="#摩尔投票法" class="headerlink" title="摩尔投票法"></a>摩尔投票法</h1><ul>
+<li>解决：多数票问题，假如一个数字出现的次数超过1&#x2F;2那么摩尔投票法，  </li>
+<li>复杂度：只需要O(n)时间复杂度。o(1)空间复杂度。  </li>
+<li>具体做法：创建两个值一个是element，一个是count，那么对于用多军打败少军的战术。</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">for(int p:nums)&#123;</span><br><span class="line">    if(p == element)&#123;</span><br><span class="line">        count++</span><br><span class="line">    &#125;</span><br><span class="line">    else&#123;</span><br><span class="line">        count--;</span><br><span class="line">        if(count&lt;0)&#123;</span><br><span class="line">            element = p;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;  </span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/05/2022-10-5-%E5%AD%A6%E4%B9%A0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="杜迎聪同学">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="dyc学习日记">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/10/05/2022-10-5-%E5%AD%A6%E4%B9%A0/" class="post-title-link" itemprop="url">2022.10.5 学习</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-10-05 17:22:51" itemprop="dateCreated datePublished" datetime="2022-10-05T17:22:51+08:00">2022-10-05</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-10-08 22:12:15" itemprop="dateModified" datetime="2022-10-08T22:12:15+08:00">2022-10-08</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="区别：进程是单独占用地址空间，线程共用地址空间"><a href="#区别：进程是单独占用地址空间，线程共用地址空间" class="headerlink" title="区别：进程是单独占用地址空间，线程共用地址空间"></a>区别：进程是单独占用地址空间，线程共用地址空间</h3><h1 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h1><ul>
+<li>多进程<br>管道，文件，消息队列，内存共享实现进程通信<br>不同电脑通过socket实现</li>
+<li>线程  </li>
+<li>join（）<br>一个线程只能join一次  </li>
+<li>detach()<br>驻留后台子线程</li>
+</ul>
+<ul>
+<li>joinable(）<br>如何判断detach()是否执行<br>if(xx.joinable)  …</li>
+<li>创建线程的三种方式<ol>
+<li>普通函数</li>
+<li>对象</li>
+<li>拉姆达表达式</li>
+<li>带参方式创建线程</li>
+<li>带智能指针</li>
+<li>类的成员函数</li>
+</ol>
+</li>
+<li>问题：<br>竞态条件,数据竞争，多数据竞争同一块内存数据.  </li>
+<li>解决办法：mutex互斥锁<br>mutex 存在问题，如果锁和解锁之间出现问题的话，就会出现死锁。  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">解决办法：lock_guard  </span><br><span class="line">std::lock_guard&lt;mutex&gt; guard(mu);//初始化一个lock_gurad对象就可以了</span><br></pre></td></tr></table></figure></li>
+<li>死锁(deadlock)<br>例如两个进程调用两个不同函数，两个函数加两把锁的话就挺有问题的，会互斥。<br>解决办法：</li>
+</ul>
+<ol>
+<li>锁改成同一个顺序  </li>
+<li><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">std::lock和adopt_lock函数  </span><br><span class="line">std::lock(_mu, _mu2);</span><br><span class="line">std::lock_guard&lt;mutex&gt; locker(_mu, std::adopt_lock);</span><br><span class="line">std::lock_guard&lt;mutex&gt; locker2(_mu2, std::adopt_lock);</span><br></pre></td></tr></table></figure></li>
+<li>每次使用lock_guard的时候加个大括号，跳出作用域。</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/04/2020-10-4-%E5%8D%95%E8%B0%83%E6%A0%88%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="杜迎聪同学">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="dyc学习日记">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/10/04/2020-10-4-%E5%8D%95%E8%B0%83%E6%A0%88%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" class="post-title-link" itemprop="url">2020.10.4_单调栈学习记录</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-10-04 08:52:29" itemprop="dateCreated datePublished" datetime="2022-10-04T08:52:29+08:00">2022-10-04</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-10-12 19:09:36" itemprop="dateModified" datetime="2022-10-12T19:09:36+08:00">2022-10-12</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="单调栈"><a href="#单调栈" class="headerlink" title="单调栈"></a>单调栈</h1><ul>
+<li>利用栈和空间来去节省时间，从而把时间复杂度从O(n*n)节省到O(n)。</li>
+<li>执行过程，遍历原本数组长度。</li>
+</ul>
+<h2 id="主要作用"><a href="#主要作用" class="headerlink" title="主要作用:"></a>主要作用:</h2><p>用来寻找一个矩形，对于一个元素，在出栈时候，左边的栈顶元素和右侧的让他出栈的元素分别就是离他最近的比他小的元素。</p>
+<h1 id="TCP-服务端的内容编写"><a href="#TCP-服务端的内容编写" class="headerlink" title="TCP 服务端的内容编写"></a>TCP 服务端的内容编写</h1>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/03/2022-10-3%E6%80%9D%E8%80%83/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="杜迎聪同学">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="dyc学习日记">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/10/03/2022-10-3%E6%80%9D%E8%80%83/" class="post-title-link" itemprop="url">2022.10.3工作思考</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-10-03 19:20:24 / 修改时间：22:54:38" itemprop="dateCreated datePublished" datetime="2022-10-03T19:20:24+08:00">2022-10-03</time>
             </span>
 
           
@@ -213,19 +510,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+          <p>大行情如此艰难，如何给自己增加项目经历从而增加筹码呢？项目，算法，以及八股文，都是需要准备的，毕业的课题论文。</p>
+<h1 id="项目"><a href="#项目" class="headerlink" title="项目"></a>项目</h1><p>关于项目，对于webserver中可以加入一些防止泛洪攻击的内容，加点创新咯。</p>
+<h1 id="课题"><a href="#课题" class="headerlink" title="课题"></a>课题</h1><p>还是看看论文，稍微研究一下吧。毕竟毕业重要咯~</p>
 
       
     </div>
@@ -310,12 +597,12 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-count">15</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">8</span>
         <span class="site-state-item-name">标签</span>
       </div>
   </nav>
@@ -342,7 +629,7 @@
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2022</span>
+  <span itemprop="copyrightYear">2023</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
